@@ -19,54 +19,37 @@ const html = `
     <link rel="stylesheet" href="style.css">
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: Arial, Helvetica, sans-serif;
             text-align: center;
+            background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSY_ajUXciq3GKGO3EJh3Qn9HU-0uimS819jf4zz69_zj5A-hSc9xaaYRPmp_KlJvCKpSw&usqp=CAU");
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
         }
-        .container {
-            display: block;
-            justify-content: space-between; /* Các phần tử con sẽ được căn giữa và giữa chúng sẽ có khoảng trống */
-            margin: auto;
-        }
-        .backgroudbai1 {
+        .button1{
             display: flex;
             align-items: center;
             justify-content: center;
-            height: 50px;
-            width: 190px;
-            margin: auto;
-            background-color: rgb(79, 128, 178);
+            margin: auto;height: 50px;
+            width: 300px;
+            background-color: brown; 
+            border-radius: 5px;
         }
-        .backgroudbai{
-            height: 50px;
-            width: 190px;
-            margin:auto;
-            background-color: black;
-            color: white;
-            border-radius: 10px
-        }
-        .backgroudbai:hover{
-            transition: 0.3s;
-            background-color: antiquewhite;
-        }
-        .backgroudbai1 h3 {
-            margin: 0;
-            color: white; 
-        }
-        .colorword {
-            color: blue; 
-            font-weight: bold;
+        .button1:hover{
+            transition: o.3s;
+            background-color: rgb(192, 113, 113);
         }
     </style>
 </head>
 <body>
-    <div class="backgroudbai1">
-        <h3>190 x 50</h3>
-    </div>
-    <h1>Best <span class="colorword">Share Hosting</span> Company</h1>
-    <p>With this responsive landing page template, you can promote your all hosting, domain and email services</p>
-    <button class="backgroudbai" style="margin-right: 10px;">VIEW</button>
-    <button class="backgroudbai" style="margin-left: 10px;">ALL</button>
-    
+
+    <h1 style="color: aliceblue;"> Don't miss this special offer</h1>
+    <p style="color: aliceblue;">Get it now for just $10! The price will be increased after 50 downloads</p>
+    <br>
+    <button class="button1">
+        <p style="color: aliceblue;">Get the latest version of Bootslander</p>
+    </button >
 </body>
 </html>
 `
