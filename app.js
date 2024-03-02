@@ -18,77 +18,54 @@ const html = `
     <title>Document</title>
     <link rel="stylesheet" href="style.css">
     <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
         .container {
-    position: relative;
-    margin-top: 50px;
-    margin-left: 100px;
-    width: 80%;
-    height: 450px;
-    overflow: hidden;
-}
-
-.box {
-    width: 100%;
-    height: 100%;
-    background-repeat: no-repeat;
-    background-size: 100%;
-    background-image: url(okla.jpg);
-    object-fit: cover;
-    filter: brightness(70%);
-}
-
-.text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    font-size: 24px;
-}
-h1{
-    color: black;
-    font-size: 25px;
-    padding-top: 100px;
-    padding-bottom: 25px;
-
-}
-h2{
-    color: black;
-    font-size: 18px;
-    padding-bottom: 50px;
-}
-button
-{
-    width: 300px;
-    height: 50px;
-    color: white;
-    background-color: rgba(223, 47, 35, 0.856);
-    background: linear-gradient(0,white,(223, 47, 35, 0.856));
-    font-weight: bold ;
-    border-radius: 5px;
-
-}body{
-    text-align: center;
-}
+            display: block;
+            justify-content: space-between; /* Các phần tử con sẽ được căn giữa và giữa chúng sẽ có khoảng trống */
+            margin: auto;
+        }
+        .backgroudbai1 {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 50px;
+            width: 190px;
+            margin: auto;
+            background-color: rgb(79, 128, 178);
+        }
+        .backgroudbai{
+            height: 50px;
+            width: 190px;
+            margin:auto;
+            background-color: black;
+            color: white;
+            border-radius: 10px
+        }
+        .backgroudbai:hover{
+            transition: 0.3s;
+            background-color: antiquewhite;
+        }
+        .backgroudbai1 h3 {
+            margin: 0;
+            color: white; 
+        }
+        .colorword {
+            color: blue; 
+            font-weight: bold;
+        }
     </style>
 </head>
 <body>
-
-    <div class="container">
-        <div class="box"></div>
-        <div class="text">
-            <h1>
-                Don't miss this special offer!
-            </h1>
-            <h2 >
-                Get it now for just 10$! the price will be increased after 50 dowloads
-            </h2>
-            <button>
-                Get the latest version of Bootslander
-            </button> 
-        </div>
+    <div class="backgroudbai1">
+        <h3>190 x 50</h3>
     </div>
-    
+    <h1>Best <span class="colorword">Share Hosting</span> Company</h1>
+    <p>With this responsive landing page template, you can promote your all hosting, domain and email services</p>
+    <button class="backgroudbai" style="margin-right: 10px;">VIEW</button>
+    <button class="backgroudbai" style="margin-left: 10px;">ALL</button>
     
 </body>
 </html>
